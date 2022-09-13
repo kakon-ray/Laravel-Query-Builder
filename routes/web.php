@@ -6,6 +6,7 @@ use App\Http\Controllers\Aggregatets;
 use App\Http\Controllers\SelectController;
 use App\Http\Controllers\MargeController;
 use App\Http\Controllers\JoinController;
+use App\Http\Controllers\InsertController;
 
 // "Retrieving Result
 
@@ -41,3 +42,8 @@ Route::get('/table-marge',[MargeController::class, 'MargeData']);
 
 Route::get('/left-join',[JoinController::class, 'LeftJoinData']);
 Route::get('/right-join',[JoinController::class, 'RightJoinData']);
+
+// insert new row
+
+Route::get('/insert-new-row',[InsertController::class, 'InsertRow']);
+Route::get('/insert-multiple-row',[InsertController::class, 'InsertMultipleRow']);
