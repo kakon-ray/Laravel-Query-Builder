@@ -7,6 +7,7 @@ use App\Http\Controllers\SelectController;
 use App\Http\Controllers\MargeController;
 use App\Http\Controllers\JoinController;
 use App\Http\Controllers\InsertController;
+use App\Http\Controllers\DeleteRowData;
 
 // "Retrieving Result
 
@@ -47,3 +48,7 @@ Route::get('/right-join',[JoinController::class, 'RightJoinData']);
 
 Route::get('/insert-new-row',[InsertController::class, 'InsertRow']);
 Route::get('/insert-multiple-row',[InsertController::class, 'InsertMultipleRow']);
+
+// Delete Data
+ 
+Route::get('/delete-data',[DeleteRowData::class, 'DeleteData']);
