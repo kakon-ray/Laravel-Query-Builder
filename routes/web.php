@@ -5,6 +5,7 @@ use App\Http\Controllers\RetiriveController;
 use App\Http\Controllers\Aggregatets;
 use App\Http\Controllers\SelectController;
 use App\Http\Controllers\MargeController;
+use App\Http\Controllers\JoinController;
 
 // "Retrieving Result
 
@@ -34,3 +35,9 @@ Route::get('/multiple-colmn-select',[SelectController::class, 'MultipleColmnSele
 // Marge Data
 
 Route::get('/table-marge',[MargeController::class, 'MargeData']);
+
+
+// left and right join
+
+Route::get('/left-join',[JoinController::class, 'LeftJoinData']);
+Route::get('/right-join',[JoinController::class, 'RightJoinData']);
